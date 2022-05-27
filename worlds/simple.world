@@ -1,5 +1,4 @@
 <sdf version="1.7">
-
     <world name="default">
 
         <include>
@@ -76,7 +75,9 @@
                 <interpolate_x>true</interpolate_x>
             </animation>
             <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
-                <namespace>actor_2</namespace>
+                <ros>
+                    <namespace>actor_2</namespace>
+                </ros>
             </plugin>
         </actor>
 

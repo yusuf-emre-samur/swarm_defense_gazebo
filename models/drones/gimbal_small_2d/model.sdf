@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<sdf version='1.6'>
-  <model name='gimbal_small_2d'>
+<sdf version="1.6">
+  <model name="gimbal_small_2d">
     <pose>0 0 0.18 0 0 0</pose>
 
-    <link name='base_link'>
+    <link name="base_link">
       <inertial>
         <mass>0.2</mass>
         <inertia>
@@ -16,7 +16,7 @@
         </inertia>
       </inertial>
 
-      <visual name='base_main_viz'>
+      <visual name="base_main_viz">
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -31,7 +31,7 @@
         </material>
       </visual>
 
-      <visual name='base_arm_viz'>
+      <visual name="base_arm_viz">
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
@@ -46,7 +46,7 @@
         </material>
       </visual>
 
-      <collision name='base_col'>
+      <collision name="base_col">
         <pose>0.01 0.075 -0.025 0 0 0</pose>
         <geometry>
           <box>
@@ -67,7 +67,7 @@
       </collision>
     </link>
 
-    <link name='tilt_link'>
+    <link name="tilt_link">
       <inertial>
         <mass>0.01</mass>
         <inertia>
@@ -79,7 +79,7 @@
           <izz>0.00001</izz>
         </inertia>
       </inertial>
-      <visual name='tilt_viz'>
+      <visual name="tilt_viz">
         <pose>0 0 -0.005 0 0 0</pose>
         <geometry>
           <mesh>
@@ -95,7 +95,7 @@
         </material>
       </visual>
 
-      <collision name='tilt_col'>
+      <collision name="tilt_col">
         <pose>0 0 -0.005 0 0 0</pose>
         <geometry>
           <mesh>
@@ -105,7 +105,7 @@
         </geometry>
       </collision>
 
-      <visual name='camera_viz'>
+      <visual name="camera_viz">
         <pose>0 0 0.02 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -122,7 +122,7 @@
         </material>
       </visual>
 
-      <collision name='camera_col'>
+      <collision name="camera_col">
         <pose>0 0 0.02 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -152,7 +152,7 @@
 
     </link>
 
-    <joint name='tilt_joint' type='revolute'>
+    <joint name="tilt_joint" type="revolute">
       <parent>base_link</parent>
       <child>tilt_link</child>
 
