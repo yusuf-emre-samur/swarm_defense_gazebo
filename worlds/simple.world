@@ -1,6 +1,5 @@
 <sdf version="1.7">
     <world name="default">
-
         <include>
             <uri>model://grass_plane_40x40</uri>
         </include>
@@ -9,7 +8,6 @@
             <uri>model://sun</uri>
         </include>
 
-
         <model name="drone_1">
             <pose>2 0 0 0 0 0 </pose>
             <include>
@@ -17,7 +15,7 @@
             </include>
             <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
                 <ros>
-                    <namespace>drone_1</namespace>
+                    <namespace>drones/drone_1</namespace>
                 </ros>
                 <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
                 <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
@@ -28,6 +26,7 @@
                 <max_ang_vel>1 1 1</max_ang_vel>
             </plugin>
         </model>
+
         <actor name="actor_1">
             <pose>0 0 1.05 0 0 0</pose>
             <skin>
@@ -49,35 +48,13 @@
                 <interpolate_x>true</interpolate_x>
             </animation>
             <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
-                <namespace>actor_1</namespace>
-            </plugin>
-        </actor>
-
-
-        <actor name="actor_2">
-            <pose>0 0 1.05 0 0 0</pose>
-            <skin>
-                <filename>stand.dae</filename>
-                <scale>1.0</scale>
-            </skin>
-            <animation name="walking">
-                <filename>walk.dae</filename>
-                <scale>1.000000</scale>
-                <interpolate_x>true</interpolate_x>
-            </animation>
-            <animation name="standing">
-                <filename>stand.dae</filename>
-                <scale>1.000000</scale>
-            </animation>
-            <animation name="running">
-                <filename>run.dae</filename>
-                <scale>1.000000</scale>
-                <interpolate_x>true</interpolate_x>
-            </animation>
-            <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
                 <ros>
-                    <namespace>actor_2</namespace>
+                    <namespace>actors/actor_1</namespace>
                 </ros>
+                <points>
+                    <point type="run" wait_after="10">10 10</point>
+                    <point type="run">20 20</point>
+                </points>
             </plugin>
         </actor>
 
@@ -87,14 +64,16 @@
                 <uri>model://sbahn</uri>
             </include>
         </model>
-        <plugin name="world_plugin" filename="libsd_world_plugin.so">
+
+
+        <plugin name="sd_world_plugin" filename="libsd_world_plugin.so">
             <ros>
                 <namespace>world</namespace>
             </ros>
             <objects>
-                <object>actor_1</object>
-                <object>actor_2</object>
-                <object>drone_1</object>
+                <!-- <object>actor_1</object> -->
+                <!-- <object>actor_2</object> -->
+                <!-- <object>drone_1</object> -->
             </objects>
         </plugin>
     </world>
