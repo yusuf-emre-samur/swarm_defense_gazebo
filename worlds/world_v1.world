@@ -43288,7 +43288,7 @@
       </model>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-195.81375 48.3634 0 0 -0 0</pose>
+      <pose>-195.81375 48 0 0 -0 0</pose>
     </model>
     <model name='fence16_6'>
       <model name='fence8'>
