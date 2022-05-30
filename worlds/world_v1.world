@@ -40971,7 +40971,7 @@
       </model>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-223.752 48.3655 0 0 -0 0</pose>
+      <pose>-223.752 48 0 0 -0 0</pose>
     </model>
     <model name='fence16'>
       <model name='fence8'>
@@ -46675,7 +46675,7 @@
     </model>
 
 
-    <model name='drone_station'>
+    <model name='drone_station_0'>
       <include>
         <uri>model://drone_station</uri>
       </include>
@@ -46683,7 +46683,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-200 -100 11.4 0 -0 0</pose>
     </model>
-    <model name='drone_station_0'>
+    <model name='drone_station_1'>
       <include>
         <uri>model://drone_station</uri>
       </include>
@@ -46691,7 +46691,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-200 -102 11.4 0 -0 0</pose>
     </model>
-    <model name='drone_station_1'>
+    <model name='drone_station_2'>
       <include>
         <uri>model://drone_station</uri>
       </include>
@@ -46699,21 +46699,13 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-200 -104 11.4 0 -0 0</pose>
     </model>
-    <model name='drone_station_2'>
-      <include>
-        <uri>model://drone_station</uri>
-      </include>
-      <static>1</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>-200 -106 11.4 0 -0 0</pose>
-    </model>
     <model name='drone_station_3'>
       <include>
         <uri>model://drone_station</uri>
       </include>
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-202 -100 11.4 0 -0 0</pose>
+      <pose>-200 -106 11.4 0 -0 0</pose>
     </model>
     <model name='drone_station_4'>
       <include>
