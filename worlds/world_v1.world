@@ -46912,14 +46912,15 @@
           <interpolate_x>true</interpolate_x>
       </animation>
 
-      <pose>-13.45 19.83 1.05 0 0 0 </pose>
+      <pose>-10 19.83 1.05 0 0 0 </pose>
 
         <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
             <ros>
                 <namespace>actors/actor_1</namespace>
             </ros>
             <points>
-                <point type="run" wait_after="10">24.9 19.277</point>
+                <point type="walk" wait_after="2">20 19.83</point>
+                <point type="run">30 19.83</point>
             </points>
         </plugin>
       </actor>
