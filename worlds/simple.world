@@ -8,14 +8,14 @@
             <uri>model://sun</uri>
         </include>
 
-        <model name="drone_1">
-            <pose>2 0 0 0 0 0 </pose>
+        <model name="drone_0">
+            <pose>0 0 0 0 0 0 </pose>
             <include>
                 <uri>model://iris_standoff_camera</uri>
             </include>
             <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
                 <ros>
-                    <namespace>drones/drone_1</namespace>
+                    <namespace>drones/drone_0</namespace>
                 </ros>
                 <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
                 <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
@@ -58,12 +58,6 @@
             </plugin>
         </actor>
 
-        <model name="sbahn1">
-            <pose>-72 9 0</pose>
-            <include>
-                <uri>model://sbahn</uri>
-            </include>
-        </model>
 
 
         <plugin name="sd_world_plugin" filename="libsd_world_plugin.so">
