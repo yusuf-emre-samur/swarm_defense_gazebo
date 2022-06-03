@@ -46658,19 +46658,9 @@
     </model>
     <model name='bumper_2'>
       <static>1</static>
-      <link name='link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://bumper/meshes/model.dae</uri>
-              <scale>50 50 50</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
+      <include>
+        <uri>model://bumper</uri>
+      </include>
       <pose>38.175 37.083 0 0 0 -1.57</pose>
     </model>
 
@@ -46754,8 +46744,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46773,8 +46762,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46792,8 +46780,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46811,8 +46798,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46830,8 +46816,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46849,8 +46834,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46868,8 +46852,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 
@@ -46887,8 +46870,7 @@
           <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
           <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
 
-          <max_vel>2 2 2</max_vel>
-          <max_ang_vel>1 1 1</max_ang_vel>
+        <max_vel>10 10 5</max_vel>
       </plugin>
     </model>
 

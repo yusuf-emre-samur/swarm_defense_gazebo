@@ -1,0 +1,115 @@
+<sdf version="1.7">
+    <world name="default">
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <model name="drone_0">
+            <pose>0 0 0.075 0 0 0 </pose>
+            <include>
+                <uri>model://iris_standoff_camera</uri>
+            </include>
+            <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
+                <ros>
+                    <namespace>drones/drone_0</namespace>
+                </ros>
+                <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
+                <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
+                <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
+                <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
+
+                <max_vel>10 10 5</max_vel>
+            </plugin>
+        </model>
+        <model name="base_station_0">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 0 0 0 0 0</pose>
+        </model>
+
+        <model name="drone_1">
+            <pose>0 2 0.075 0 0 0 </pose>
+            <include>
+                <uri>model://iris_standoff_camera</uri>
+            </include>
+            <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
+                <ros>
+                    <namespace>drones/drone_1</namespace>
+                </ros>
+                <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
+                <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
+                <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
+                <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
+
+                <max_vel>10 10 5</max_vel>
+            </plugin>
+        </model>
+        <model name="base_station_1">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 2 0 0 0 0</pose>
+        </model>
+
+        <model name="drone_2">
+            <pose>0 4 0.075 0 0 0 </pose>
+            <include>
+                <uri>model://iris_standoff_camera</uri>
+            </include>
+            <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
+                <ros>
+                    <namespace>drones/drone_2</namespace>
+                </ros>
+                <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
+                <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
+                <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
+                <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
+
+                <max_vel>10 10 5</max_vel>
+            </plugin>
+        </model>
+        <model name="base_station_2">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 4 0 0 0 0</pose>
+        </model>
+
+        <model name="drone_3">
+            <pose>0 6 0.075 0 0 0 </pose>
+            <include>
+                <uri>model://iris_standoff_camera</uri>
+            </include>
+            <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
+                <ros>
+                    <namespace>drones/drone_3</namespace>
+                </ros>
+                <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
+                <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
+                <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
+                <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
+
+                <max_vel>10 10 5</max_vel>
+            </plugin>
+        </model>
+        <model name="base_station_3">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 6 0 0 0 0</pose>
+        </model>
+
+
+        <plugin name="sd_world_plugin" filename="libsd_world_plugin.so">
+            <ros>
+                <namespace>world</namespace>
+            </ros>
+            <objects>
+                <!-- <object>actor_0</object> -->
+                <!-- <object>actor_2</object> -->
+                <!-- <object>drone_1</object> -->
+            </objects>
+        </plugin>
+    </world>
+</sdf>
