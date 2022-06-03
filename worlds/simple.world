@@ -9,7 +9,7 @@
         </include>
 
         <model name="drone_0">
-            <pose>0 0 0.1 0 0 0 </pose>
+            <pose>0 0 0.075 0 0 0 </pose>
             <include>
                 <uri>model://iris_standoff_camera</uri>
             </include>
@@ -26,9 +26,15 @@
                 <max_ang_vel>1 1 1</max_ang_vel>
             </plugin>
         </model>
+        <model name="base_station_0">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 0 0 0 0 0</pose>
+        </model>
 
         <model name="drone_1">
-            <pose>2 2 0.1 0 0 0 </pose>
+            <pose>0 2 0.075 0 0 0 </pose>
             <include>
                 <uri>model://iris_standoff_camera</uri>
             </include>
@@ -45,9 +51,15 @@
                 <max_ang_vel>1 1 1</max_ang_vel>
             </plugin>
         </model>
+        <model name="base_station_1">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 2 0 0 0 0</pose>
+        </model>
 
         <model name="drone_2">
-            <pose>4 2 0.1 0 0 0 </pose>
+            <pose>0 4 0.075 0 0 0 </pose>
             <include>
                 <uri>model://iris_standoff_camera</uri>
             </include>
@@ -64,9 +76,15 @@
                 <max_ang_vel>1 1 1</max_ang_vel>
             </plugin>
         </model>
+        <model name="base_station_2">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 4 0 0 0 0</pose>
+        </model>
 
         <model name="drone_3">
-            <pose>6 2 0.1 0 0 0 </pose>
+            <pose>0 6 0.075 0 0 0 </pose>
             <include>
                 <uri>model://iris_standoff_camera</uri>
             </include>
@@ -83,8 +101,14 @@
                 <max_ang_vel>1 1 1</max_ang_vel>
             </plugin>
         </model>
+        <model name="base_station_3">
+            <include>
+                <uri>model://drone_station</uri>
+            </include>
+            <pose>0 6 0 0 0 0</pose>
+        </model>
 
-        <actor name="actor_0">
+        <!-- <actor name="actor_0">
             <pose>10 10 1.05 0 0 0</pose>
             <skin>
                 <filename>stand.dae</filename>
@@ -114,6 +138,7 @@
                 </points>
             </plugin>
         </actor>
+        -->
 
 
 
@@ -122,7 +147,7 @@
                 <namespace>world</namespace>
             </ros>
             <objects>
-                <object>actor_0</object>
+                <!-- <object>actor_0</object> -->
                 <!-- <object>actor_2</object> -->
                 <!-- <object>drone_1</object> -->
             </objects>
