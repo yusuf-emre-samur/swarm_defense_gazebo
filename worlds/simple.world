@@ -108,38 +108,6 @@
             <pose>0 6 0 0 0 0</pose>
         </model>
 
-        <!-- <actor name="actor_0">
-            <pose>10 10 1.05 0 0 0</pose>
-            <skin>
-                <filename>stand.dae</filename>
-                <scale>1.0</scale>
-            </skin>
-            <animation name="walking">
-                <filename>walk.dae</filename>
-                <scale>1.000000</scale>
-                <interpolate_x>true</interpolate_x>
-            </animation>
-            <animation name="standing">
-                <filename>stand.dae</filename>
-                <scale>1.000000</scale>
-            </animation>
-            <animation name="running">
-                <filename>run.dae</filename>
-                <scale>1.000000</scale>
-                <interpolate_x>true</interpolate_x>
-            </animation>
-            <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
-                <ros>
-                    <namespace>actors/actor_0</namespace>
-                </ros>
-                <points>
-                    <!-- <point type="run" wait_after="10">10 10</point>
-                    <point type="run">20 20</point> -->
-                </points>
-            </plugin>
-        </actor>
-        -->
-
 
 
         <plugin name="sd_world_plugin" filename="libsd_world_plugin.so">
