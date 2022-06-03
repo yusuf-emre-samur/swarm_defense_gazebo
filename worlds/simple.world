@@ -65,6 +65,25 @@
             </plugin>
         </model>
 
+        <model name="drone_3">
+            <pose>6 2 0.1 0 0 0 </pose>
+            <include>
+                <uri>model://iris_standoff_camera</uri>
+            </include>
+            <plugin name="sd_drone_plugin" filename="libsd_drone_plugin.so">
+                <ros>
+                    <namespace>drones/drone_3</namespace>
+                </ros>
+                <link_name_rotor_0>iris_standoff_camera::iris::rotor_0</link_name_rotor_0>
+                <link_name_rotor_1>iris_standoff_camera::iris::rotor_1</link_name_rotor_1>
+                <link_name_rotor_2>iris_standoff_camera::iris::rotor_2</link_name_rotor_2>
+                <link_name_rotor_3>iris_standoff_camera::iris::rotor_3</link_name_rotor_3>
+
+                <max_vel>2 2 2</max_vel>
+                <max_ang_vel>1 1 1</max_ang_vel>
+            </plugin>
+        </model>
+
         <actor name="actor_0">
             <pose>10 10 1.05 0 0 0</pose>
             <skin>
