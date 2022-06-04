@@ -29647,7 +29647,7 @@
         <interpolate_x>true</interpolate_x>
       </animation>
 
-      <pose>-20 19.83 1.05 0 0 0 </pose>
+      <pose>-50 -50 1.05 0 0 0 </pose>
 
       <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
         <ros>
@@ -29679,7 +29679,7 @@
         <interpolate_x>true</interpolate_x>
       </animation>
 
-      <pose>-30 19.83 1.05 0 0 0 </pose>
+      <pose>-80 -80 1.05 0 0 0 </pose>
 
       <plugin name="actor_plugin" filename="libsd_actor_plugin.so">
         <ros>
