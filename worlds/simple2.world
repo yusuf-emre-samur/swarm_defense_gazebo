@@ -1,10 +1,6 @@
 <sdf version="1.7">
     <world name="default">
         <include>
-            <uri>model://grass_plane_40x40</uri>
-        </include>
-
-        <include>
             <uri>model://sun</uri>
         </include>
 
@@ -103,7 +99,6 @@
             </include>
             <pose>0 6 0 0 0 0</pose>
         </model>
-
 
 
         <plugin name="sd_world_plugin" filename="libsd_world_plugin.so">
