@@ -29654,8 +29654,8 @@
           <namespace>actors/actor_1</namespace>
         </ros>
         <points>
-          <!-- <point type="walk" wait_after="2">20 19.83</point>
-          <point type="run">30 19.83</point> -->
+          <point type="walk" wait_after="15">-51 -51</point>
+          <point type="run">-10 -30</point>
         </points>
       </plugin>
     </actor>
@@ -29686,11 +29686,12 @@
           <namespace>actors/actor_2</namespace>
         </ros>
         <points>
-          <!-- <point type="walk" wait_after="2">20 19.83</point>
-          <point type="run">30 19.83</point> -->
+          <!-- <point type="walk" wait_after="15">-81 -81</point>
+          <point type="run">-40 -60</point> -->
         </points>
       </plugin>
     </actor>
+    <!--  -->
     <!-- world plugin -->
     <plugin name="sd_world_plugin" filename="libsd_world_plugin.so">
       <ros>
